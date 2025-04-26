@@ -12,6 +12,7 @@ html, body {
   width: 100%;
   user-select: none;
   overflow-x: hidden;
+  font-family: 'pretendard', sans-serif;
 }
 
 /* font */
