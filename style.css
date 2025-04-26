@@ -285,7 +285,7 @@ p {
 
 #s3 {
   padding: 9;
-  font-size: clamp (16px, 2.8vh, 20px);
+  font-size: clamp(16px, 2vh, 20px);
 }
 
 #s3 img {
