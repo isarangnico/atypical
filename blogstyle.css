@@ -621,6 +621,11 @@ footer a {
     }
 
 
+    .popup-content p {
+        padding-top: 6px;
+        line-height: 16px;
+    }
+
     .s1_p p {
         font-size: clamp(12px, 4vw, 16px);
         padding: 4px 16px;
