@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>w!ngs</title>
+  <title>News</title>
   <link rel="stylesheet" href="newsstyle.css">
 
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -15,8 +15,7 @@
 <body>
   <header>
     <div id="gnb">
-      <h3>NEWS</h3>
-
+      <a href="news.html"><h3>NEWS</h3></a>
       <div class="menu">
         <ul>
           <li><a href="#s1">BREAKING!!</a></li>
@@ -71,7 +70,7 @@
         인간계 뉴스에 등장</h1>
       <p>천국 시간으로 오늘 오전 9시경, 린커우 지부 소속 천사 니콜라스가 임무 수행을 위해 지상계에 파견되었다. 출현 직후 인간 세계 주요 방송 및 뉴스 매체를 통해 긴급 보도되었다. 인간계 반응은 예상을
         뛰어넘는 속도로 확산되며, 천상에서도 이를 중대 관심 사안으로 분류하고 있다.…
-        <a href="#">더보기</a>
+        <a href="breaking.html">더보기</a>
       </p>
 
       <img src="img/news/hotnews.jpg" alt="">
@@ -128,7 +127,7 @@
       <!-- footer -->
 
       <footer>
-        <h3>➐➐➐</h3>
+        <a href="index.html"><h3>➐➐➐</h3></a>
         <p>copyright © 2025 Atypical Tensh! All rights reserved</p>
     </footer>
 
@@ -140,6 +139,21 @@
     <script>
         AOS.init();
     </script>
+
+
+
+<script>
+  function getVividColor() {
+    const baseHue = 240; // 파란색 계열
+    const hue = (baseHue + Math.floor(Math.random() * 60) - 30 + 360) % 360;
+    return `hsl(${hue}, 100%, 50%)`; // 쨍한 색 유지
+  }
+  
+  setInterval(() => {
+    const box = document.querySelector('.breaking');
+    box.style.backgroundColor = getVividColor();
+  }, 1000);
+  </script>
 
 
 
