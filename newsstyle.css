@@ -55,6 +55,71 @@ p {
 }
 
 
+
+.window-bar {
+  background: linear-gradient(180deg, #EEEEEE 6.25%, #FFFFFF 37.98%, #D9D9D9 100%);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.window-url {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.window-url a {
+  text-decoration: none;
+  color: #555;
+}
+
+.window-url a span:first-child {
+  display: none;
+}
+
+.window-url a:hover {
+  color: #0004FF;
+}
+
+.window-url a:hover span:first-child {
+  display: inline;
+}
+
+.window-url a:hover span:last-child {
+  opacity: 0;
+}
+
+.window-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.window-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.red {
+  background-color: #999;
+}
+
+.dot.yellow {
+  background-color: #6B6B6B;
+}
+
+.dot.green {
+  background-color: #c2c2c2;
+}
+
+
+
+
+
+
+
 /* header */
 
 header {
@@ -101,6 +166,7 @@ header {
   text-decoration: none;
   font: 400 24px 'Pretendard', sans-serif;
   color: #0004FF;
+  background-color: #fff;
 }
 
 .menu ul li a:hover {
