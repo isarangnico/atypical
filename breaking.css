@@ -1,0 +1,968 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    user-select: none;
+    overflow-x: hidden;
+    font-family: 'pretendard', sans-serif;
+}
+
+/* font */
+h1 {
+    font: 700 clamp(66px, 6vw, 94px) 'pretendard', sans-serif;
+    letter-spacing: -4px;
+    color: #262626;
+}
+
+h2 {
+    font: 700 clamp(66px, 6vw, 80px) 'pretendard', sans-serif;
+    letter-spacing: -4px;
+    color: #262626;
+}
+
+h3 {
+    font: 700 clamp(44px, 4vw, 66px) 'pretendard', sans-serif;
+    letter-spacing: -4px;
+    color: #262626;
+}
+
+
+h4 {
+    font: 700 44px 'pretendard', sans-serif;
+    letter-spacing: -4px;
+}
+
+
+h5 {
+    font: 700 clamp(24px, 4vw, 32px) 'pretendard', sans-serif;
+    letter-spacing: -2px;
+    color: #262626;
+}
+
+
+h6 {
+    font: 700 24px 'pretendard', sans-serif;
+    letter-spacing: -2px;
+    color: #262626;
+}
+
+p {
+    font: 400 20px 'pretendard', sans-serif;
+    color: #262626;
+}
+
+
+/* header */
+
+header {
+    background-image: url(img/news/news_bg.jpg);
+
+}
+
+#gnb {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    /* 위아래 간격 */
+    padding: 88px 0px;
+    align-items: center;
+}
+
+#gnb h3 {
+    color: #0004FF;
+    font-size: 40px;
+    text-align: center;
+    /* font-style: italic; */
+    /* mix-blend-mode: difference; */
+}
+
+#gnb a {
+    text-decoration: none;
+}
+
+
+
+
+.breaking {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0004FF;
+    white-space: nowrap;
+    padding: 8px 0;
+    transition: background-color 0.5s ease;
+}
+
+.track {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+
+.content {
+    display: inline-block;
+}
+
+.breaking p {
+    display: inline-block;
+    margin: 0 2rem;
+    color: #fff;
+    font: 700 32px 'pretendard', sans-serif;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/* s1 */
+
+#s1 {
+    background-image: url(img/news/news_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 3294px;
+    padding: 46px clamp(24px, 4vw, 72px);
+    display: flex;
+    flex-direction: row;
+}
+
+
+.naka h1 {
+    padding-bottom: 20px;
+}
+
+.color {
+    color: #999999;
+}
+
+.naka {
+    position: relative;
+    width: 100%;
+    max-width: 1476px;
+    height: 3248px;
+    /* background-color: #fff; */
+    background-blend-mode: color-dodge;
+    border: 1px solid transparent;
+    border-image: linear-gradient(#121212, #ffffff);
+    border-image-slice: 1;
+    padding: 116px 150px 0px 126px;
+    overflow: hidden;
+    z-index: 0;
+    margin-right: 24px;
+}
+
+.naka::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+
+.naka p {
+    line-height: 32px;
+}
+
+
+.bold {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.nakaimg {
+    width: 100%;
+    padding: 20px 0px 16px 0px;
+}
+
+.prof {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 16px 0px 60px 0px;
+}
+
+.prof p {
+    line-height: 40px;
+}
+
+.float {
+    display: flex;
+    flex-direction: row;
+    padding: 56px 0px 16px 0;
+    width: 100%;
+    max-width: 1476px;
+}
+
+.float img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* 운세 */
+
+#popup {
+    width: 100%;
+    max-width: 276px;
+    height: 654px;
+    background-image: url(img/s1_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 72px;
+    z-index: 999;
+    top: 1500px;
+    position: absolute;
+    transition: top 0.3s ease;
+    text-align: center;
+    padding-top: 42px;
+    animation: ani 1s infinite alternate;
+}
+
+.mobilecontainer {
+    display: none;
+}
+
+
+#popup h3 {
+    color: #ff00bc;
+}
+
+#popup p {
+    color: #fff;
+    padding: 24px 0px 60px 0px;
+}
+
+#popup a {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#popup a:hover {
+    mix-blend-mode: difference;
+}
+
+
+
+
+/* s2 */
+
+#s2 {
+    width: 100%;
+    height: 376px;
+    background-color: #fff;
+    padding: 62px 72px;
+    display: flex;
+    flex-direction: row;
+    gap: clamp(24px, 1.5vw, 40px);
+}
+
+#s2 ul {
+    color: #0004FF;
+    padding-left: clamp(60px, 1.5vw, 170px);
+    line-height: 32px;
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#s2 ul a {
+    color: #0004FF;
+    font-size: clamp(16px, 1vw, 20px);
+    line-height: 44px;
+}
+
+#s2 ul a:hover {
+    color: #fff;
+    background-color: #0004FF;
+}
+
+.bosyuu {
+    width: 100%;
+    height: 260px;
+    background-image: url(img/tenshi_bosyuu_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -240px;
+    text-align: center;
+    padding-top: 20px;
+    animation: ani 1s infinite alternate;
+    box-shadow: 0 0 20px #C5FF35;
+}
+
+@keyframes ani {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 10px);
+    }
+}
+
+
+.bosyuu h2 {
+    color: #FF00BC;
+    line-height: clamp(66px, 6vw, 80px);
+}
+
+.bosyuu h3 {
+    color: #262626;
+    line-height: clamp(44px, 6vw, 60px);
+}
+
+.bosyuu p {
+    color: #262626;
+    font: 400 clamp(24px, 2vw, 32px)/32px'pretendard', sans-serif;
+    padding: 6px 0px 10px 0px;
+}
+
+.bosyuu a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF00BC;
+    font: 700 32px/24px 'pretendard', sans-serif;
+}
+
+.bosyuu a:hover {
+    color: #262626;
+    background-color: #C5FF35;
+}
+
+.container {
+    width: 90%;
+    max-width: 1176px;
+    margin: auto;
+}
+
+
+/* 댓글창  */
+
+#s3 {
+    width: 100%;
+    height: auto;
+    padding: 56px clamp(120px, 4vw, 372px) 0px clamp(120px, 4vw, 222px);
+}
+
+
+
+.nicholasdaisuki p {
+    font-size: 32px;
+    padding: 32px 0 18px 0;
+}
+
+.nicholasdaisuki span {
+    color: #999999;
+}
+
+.comment-box {
+    max-width: 1326px;
+    display: flex;
+    /* align-items: center; */
+    gap: 24px;
+    /* margin: 20px; */
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.comment-box input {
+    border: 1px solid #121212;
+    width: 100%;
+    max-width: 1176px;
+    padding: 14px;
+    font: 400 20px/32px 'pretendard', sans-serif;
+}
+
+.comment-box button {
+    all: unset;
+    border: 1px solid #121212;
+    width: 126px;
+    text-align: center;
+    color: #262626;
+}
+.comment-box button:hover {
+    background-color: #0004FF;
+    color: #fff;
+}
+
+
+.tooltip-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1326px;
+}
+
+
+.tooltip {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(0);
+    background: #C5FF35;
+    color: #262626;
+    padding: 12px 12px;
+    border-radius: 999px;
+    font-size: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    text-align: center;
+}
+
+/* 
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #C5FF35 transparent transparent transparent;
+  } */
+
+/* 보이게 할 때 */
+.tooltip.show {
+    opacity: 1;
+    color: #262626;
+
+}
+
+
+
+
+.tenshiup {
+    background-color: #FF00BC;
+    color: white;
+    padding: 2px 16px;
+    border: none;
+    font: 700 20px/32px 'pretendard', sans-serif;
+    cursor: pointer;
+    transition: transform 0.1s ease, background-color 0.3s ease, color 0.3s ease;
+    border-radius: 444px;
+}
+
+.tenshiup:hover {
+    transform: scale(1.05);
+}
+
+.tenshiup:active {
+    transform: scale(1.05);
+}
+
+.tenshiup.active {
+    background-color: #C5FF35;
+    color: black;
+}
+
+
+.comment_list {
+    padding-bottom: 60px;
+}
+
+.comment {
+    padding: 40px 0;
+    margin-bottom: 16px;
+    background: #fff;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 1px solid #eee;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-weight: 700;
+    font-size: 20px;
+    color: #262626;
+}
+
+.date {
+    font-size: 16px;
+    color: #999999;
+}
+
+.comment-body {
+    font-size: 20px;
+    line-height: 32px;
+    color: #333;
+    margin: 0;
+}
+
+.comment-body a {
+    color: #0004FF;
+}
+
+.comment-body a:hover {
+    background-color: #0004FF;
+    color: #fff;
+}
+
+
+.more {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 160px;
+}
+
+.more:hover {
+    color: #0004FF;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 600px;
+    background-image: url(img/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 438px;
+}
+
+footer h3 {
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-size: 40px;
+  }
+
+footer p {
+    color: #fff;
+    font: 200 16px 'pretendar', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer h3:hover {
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 태블릿용 (768px ~ 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #s1 {
+        padding: 46px 24px 0px 24px;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+
+    .naka h1 {
+        font-size: clamp(66px, 8vw, 94px);
+        line-height: clamp(66px, 8vw, 94px);
+
+    }
+
+    .naka {
+        /* max-width: 808px; */
+        padding: 46px 22px 120px 22px;
+        height: auto;
+    }
+
+
+    #popup {
+        display: none;
+    }
+
+    .float {
+        width: 50%;
+    }
+
+    .mobilecontainer {
+        display: block;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 46px;
+    }
+
+    .uranai {
+        max-width: 100%;
+        height: 142px;
+        padding: 1rem 0;
+        background-image: url(img/s1_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        animation: ani 1s infinite alternate;
+    }
+
+    .uranai h1 {
+        color: #FF00BC;
+        font-size: 32px;
+    }
+
+    .uranai h5 {
+        color: #262626;
+        font-size: 20px;
+        font-weight: 400;
+        background-color: #fff;
+        width: fit-content;
+        line-height: 24px;
+        display: inline-block;
+        margin: 12px 0;
+    }
+
+    .uranai a {
+        color: #fff;
+        background-color: #FF00BC;
+        font: 700 24px/24px'Pretendard', sans-serif;
+        display: inline-block;
+        margin-top: 0px;
+        /* mix-blend-mode: difference; */
+    }
+
+    .uranai a:hover {
+        mix-blend-mode: difference;
+    }
+
+
+    #s2 {
+        padding: 46px 24px;
+    }
+
+    #s2 ul {
+        padding-left: 24px;
+    }
+
+    #s2 ul a {
+        font-size: 16px;
+        line-height: 44px;
+    }
+
+    #s3 {
+        width: 100%;
+        height: auto;
+        padding: 56px 128px 0px 128px;
+    }
+
+
+}
+
+
+
+/* 모바일용 (최대 767px) */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 44px;
+        letter-spacing: -2px;
+      }
+    
+      h2 {
+        font-size: clamp(32px, 5vw, 44px);
+        letter-spacing: -2px;
+      }
+    
+      h3 {
+        font-size: clamp(24px, 4.5vw, 32px);
+        letter-spacing: -2px;
+      }
+    
+      h4 {
+        font-size: clamp(18px, 4vw, 24px);
+        letter-spacing: -2px;
+      }
+    
+      h5 {
+        font-size: clamp(16px, 3vw, 18px);
+      }
+    
+      p {
+        font-size: 12px;
+        letter-spacing: -1px;
+      }
+
+      
+  .breaking p {
+    font-size: 18px;
+    margin: 0 1rem;
+  }
+
+    
+
+      #popup {
+        display: none;
+    }
+
+    #s1 {
+        padding: 60px 16px 0 16px;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+
+
+    .naka {
+        padding: 36px 12px 60px 12px;
+        height: auto;
+    }
+    
+    .naka h1 {
+        padding-bottom: 12px;
+        line-height: 44px;
+    }
+
+    .naka p {
+        line-height: 18px;
+    }
+
+    .prof {
+        gap: 8px;
+        padding: 16px 0px 34px 0px;
+    }
+
+    .prof img {
+     width: 30px;
+     height: 30px;
+    }
+
+    .prof p {
+        line-height: 32px;
+    }
+
+    .nakaimg {
+        padding: 16px 0px 6px 0px;
+    }
+
+    .float {
+        width: 50%;
+        padding: 36px 0px 6px 0;
+    }
+
+    .mobilecontainer {
+        display: block;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 46px;
+    }
+
+    .uranai {
+        max-width: 100%;
+        height: 120px;
+        padding: 1rem 0;
+        background-image: url(img/s1_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        animation: ani 1s infinite alternate;
+    }
+
+    .uranai h1 {
+        color: #FF00BC;
+        font-size: 24px;
+    }
+
+    .uranai h5 {
+        color: #262626;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #fff;
+        width: fit-content;
+        line-height: 18px;
+        display: inline-block;
+        margin: 6px 0;
+    }
+
+    .uranai a {
+        color: #fff;
+        background-color: #FF00BC;
+        font: 700 24px/24px'Pretendard', sans-serif;
+        display: inline-block;
+        margin-top: 0px;
+        /* mix-blend-mode: difference; */
+    }
+
+    .uranai a:hover {
+        mix-blend-mode: difference;
+    }
+
+
+    #s2 {
+        height: auto;
+        padding: 36px 16px;
+        flex-direction: column;
+    }
+
+    #s2 ul {
+        margin: auto;
+    }
+
+    #s2 ul a {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .bosyuu {
+        height: 140px;
+        background-position: center;
+    }
+
+
+    
+.bosyuu h2 {
+    color: #FF00BC;
+    line-height: 24px;
+}
+
+.bosyuu h3 {
+    color: #262626;
+    line-height: 24px;
+}
+
+.bosyuu p {
+    font-size: 16px;
+    padding: 0px;
+}
+.bosyuu a {
+    font-size: 24px;
+}
+
+
+
+
+#s3 {
+    padding: 32px 16px;
+}
+
+.nicholasdaisuki p {
+    font-size: 16px;
+    padding: 24px 0 12px 0;
+}
+
+
+.comment-box {
+    gap: 16px;
+    font-size: 12px;
+
+}
+
+.comment-box input {
+    font-size: 12px;
+    padding: 4px 0 4px 16px;
+}
+
+.tooltip {
+    top: -100%;
+    left: 25%;
+    padding: 4px 4px;
+    font-size: 12px;
+}
+
+
+.tenshiup {
+    padding: 2px 10px;
+    font: 700 12px/18px 'pretendard', sans-serif;
+
+}
+
+.username {
+    font-size: 12px;
+}
+.date  {
+    font-size: 10px;
+}
+
+.comment {
+    padding: 20px 0;
+}
+
+.comment-body {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
+.avatar {
+    width: 30px;
+    height: 30px;
+}
+
+.comment-header {
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.more {
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+#gnb h3 {
+    font-size: 40px;
+  }
+
+  footer {
+    height: 200px;
+    padding-top: 150px;
+  }
+
+  footer h3 {
+    margin-bottom: 6px;
+    font-size: 24px;
+  }
+
+  footer p {
+    font: 200 10px/0px 'pretendar', sans-serif;
+    letter-spacing: 0px;
+  }
+
+
+    
+}
