@@ -8,7 +8,8 @@
 
 
 
-html, body {
+html,
+body {
   width: 100%;
   user-select: none;
   overflow-x: hidden;
@@ -75,16 +76,18 @@ p {
   flex-direction: column;
   gap: 1rem;
   /* 위아래 간격 */
-  padding: 5vh 5vw;
+  padding: 10vh 5vw;
   align-items: center;
 }
 
 #gnb h3 {
-  color: #ffffff;
-  font-size: 66px;
+  color: #262626;
+  font-size: 44px;
   text-align: center;
   margin-bottom: 112px;
+
 }
+
 
 
 
@@ -116,6 +119,7 @@ p {
   max-width: 1776px;
   margin: auto;
 }
+
 
 
 /* uranai */
@@ -188,12 +192,13 @@ p {
 
 #s2 {
   position: relative;
-  height: 1386px;
+  height: auto;
   /* padding: 0px 72px 0px 72px; */
   width: 100%;
 }
 
 .news_wrap {
+
   display: grid;
   width: 100%;
   margin: 0 auto;
@@ -202,7 +207,6 @@ p {
 }
 
 .s2_box1 {
-  position: absolute;
   bottom: 0;
   left: 0;
   max-width: 972px;
@@ -287,6 +291,7 @@ p {
 #s3 {
   padding: 9;
   font-size: clamp(16px, 2vh, 20px);
+  background-color: #121212;
 }
 
 
@@ -295,6 +300,7 @@ p {
   max-width: 100%;
   height: auto;
   margin: 4rem 72px;
+  filter: grayscale(100%);
 }
 
 .wrap {
@@ -308,70 +314,71 @@ p {
 #s3 h5 {
   font-weight: 700;
   margin-bottom: 28px;
-  height: 126px;
+  /* height: 126px; */
+
 }
 
 
 .s3_box {
   height: 734px;
-  background-color: #eee;
-  padding: 64px 32px;
+  color: #262626;
+  padding: 520px 32px 0px 32px;
   transition: all 0.1s linear;
-  background-image: url(img/magazine_box3.jpg);
+  background-image: url(img/magazine/magazine01.jpg);
   background-size: cover;
   border-right: 1px solid #121212;
 }
 
 .s3_box2 {
+  color: #262626;
   height: 734px;
-  background-color: #eee;
-  padding: 392px 32px 0px 32px;
+  padding: 520px 32px 0px 32px;
   transition: all 0.1s linear;
-  background-image: url(img/magazine_box3.jpg);
+  background-image: url(img/magazine/magazine02.jpg);
   background-size: cover;
   border-right: 1px solid #121212;
 }
 
 .s3_box3 {
+  color: #262626;
   height: 734px;
-  background-color: #eee;
-  padding: 64px 32px;
+  padding: 520px 32px 0px 32px;
   transition: all 0.1s linear;
-  background-image: url(img/magazine_box3.jpg);
+  background-image: url(img/magazine/magazine03.jpg);
   background-size: cover;
   border-right: 1px solid #121212;
 }
 
 .s3_box4 {
+  color: #262626;
   height: 734px;
-  background-color: #eee;
-  padding: 392px 32px 0px 32px;
+  padding: 520px 32px 0px 32px;
   transition: all 0.1s linear;
-  background-image: url(img/magazine_box3.jpg);
+  background-image: url(img/magazine/magazine04.jpg);
   background-size: cover;
 }
 
 .s3_box:hover {
   transform: scale(1.05);
-  background-image: url(img/magazine_box3_hover.jpg);
+  background-image: url(img/magazine/magazine01-1.jpg);
   color: #fff;
 }
 
 .s3_box2:hover {
   transform: scale(1.05);
-  background-image: url(img/magazine_box3_hover.jpg);
+  background-image: url(img/magazine/magazine02-2.jpg);
   color: #fff;
 }
 
 .s3_box3:hover {
   transform: scale(1.05);
-  background-image: url(img/magazine_box3_hover.jpg);
+  background-image: url(img/magazine/magazine03-3.jpg);
   color: #fff;
 }
 
 .s3_box4:hover {
   transform: scale(1.05);
-  background-image: url(img/magazine_box3_hover.jpg);
+  background-image: url(img/magazine/magazine04-4.jpg);
   color: #fff;
 }
 
@@ -509,8 +516,10 @@ p {
 }
 
 .s6_img:hover {
-  transform: scale(-1); /* 살짝 커지게 */
-  filter: brightness(1.1); /* 살짝 밝아지게 */
+  transform: scale(-1);
+  /* 살짝 커지게 */
+  filter: brightness(1.1);
+  /* 살짝 밝아지게 */
 }
 
 
@@ -577,6 +586,10 @@ p {
   height: 354px;
   background-color: #fff;
   box-shadow: 0 0 0 1px #121212;
+}
+
+.s6_box1 img {
+  width: 100%;
 }
 
 .s6_wrap h6 {
@@ -656,16 +669,20 @@ footer {
 }
 
 footer h3 {
-  color: #262626;
+  color: #ffffff;
   margin-bottom: 18px;
+  font-size: 40px;
 }
 
 
 footer p {
   color: #fff;
-  font: 400 16px 'pretendar', sans-serif;
+  font: 200 16px 'pretendar', sans-serif;
 }
 
+footer a {
+  text-decoration: none;
+}
 
 
 
@@ -937,6 +954,12 @@ footer p {
     font-size: 12px;
     letter-spacing: -1px;
   }
+
+  #gnb h3 {
+    font-size: 40px;
+  }
+
+
 
   .menu ul {
     /* flex-direction: column; */
@@ -1227,10 +1250,11 @@ footer p {
 
   footer h3 {
     margin-bottom: 6px;
+    font-size: 24px;
   }
 
   footer p {
-    font: 400 10px/0px 'pretendar', sans-serif;
+    font: 200 10px/0px 'pretendar', sans-serif;
     letter-spacing: 0px;
   }
 
