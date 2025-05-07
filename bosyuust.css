@@ -1,0 +1,662 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+html,
+body {
+    width: 100%;
+    user-select: none;
+    overflow-x: hidden;
+    font-family: 'pretendard', sans-serif;
+}
+
+body {
+    background-image: url(img/tenshi_bosyuu_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* font */
+h1 {
+    font: 700 clamp(110px, 12vw, 200px) 'pretendard', sans-serif;
+    letter-spacing: -20px;
+    color: #262626;
+}
+
+h2 {
+    font: 700 clamp(66px, 6vw, 94px) 'pretendard', sans-serif;
+    letter-spacing: -12px;
+    color: #262626;
+}
+
+h3 {
+    font: 700 66px 'pretendard', sans-serif;
+    letter-spacing: -4px;
+    color: #262626;
+}
+
+
+h4 {
+    font: 700 44px 'pretendard', sans-serif;
+    letter-spacing: -4px;
+    color: #262626;
+}
+
+h5 {
+    font: 700 32px 'pretendard', sans-serif;
+    letter-spacing: -4px;
+    color: #262626;
+}
+
+
+
+p {
+    font: 400 32px 'pretendard', sans-serif;
+    color: #262626;
+}
+
+
+
+
+
+.window-bar {
+    background: linear-gradient(180deg, #EEEEEE 6.25%, #FFFFFF 37.98%, #D9D9D9 100%);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.window-url {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.window-url a {
+    text-decoration: none;
+    color: #555;
+}
+
+.window-url a span:first-child {
+    display: none;
+}
+
+.window-url a:hover {
+    color: #ff00bc;
+}
+
+.window-url a:hover span:first-child {
+    display: inline;
+}
+
+.window-url a:hover span:last-child {
+    opacity: 0;
+}
+
+.window-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.window-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red {
+    background-color: #999;
+}
+
+.dot.yellow {
+    background-color: #6B6B6B;
+}
+
+.dot.green {
+    background-color: #c2c2c2;
+}
+
+
+
+
+
+
+
+/* 본문  */
+
+
+#s1 {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    /* height: 100%; */
+}
+
+
+
+
+.breaking {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #0004FF;
+    white-space: nowrap;
+    /* padding: 8px 0; */
+    /* mix-blend-mode: difference; */
+
+    color: #fff;
+    /* max-width: 1492px; */
+    margin: auto;
+}
+
+.track {
+    display: inline-block;
+    animation: marquee 18s linear infinite;
+}
+
+.content {
+    display: inline-block;
+}
+
+.breaking h2 {
+    display: inline-block;
+    margin: 0 1rem;
+    color: inherit;
+    /* font: 700 32px 'pretendard', sans-serif; */
+    font-style: italic;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.title {
+    text-align: center;
+    height: 582px;
+    padding: 80px 0 30px 0;
+}
+
+.title h1 {
+    color: #FFF600;
+    /* background-color: #fff; */
+    /* mix-blend-mode: difference; */
+    height: fit-content;
+    line-height: 180px;
+    margin: 60px 0 50px 0;
+    font-weight: 900;
+    transition: color 0.8s linear;
+}
+
+.stretchy {
+    display: inline-block;
+    animation: squish 1s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes squish {
+
+    0%,
+    100% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(0.5);
+    }
+}
+
+
+.xxx_wrap {
+    width: 100%;
+    max-width: 1492px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin: auto;
+    height: auto;
+    padding: 50px 0;
+
+}
+
+.xxx_box {
+    font: 700 66px/88px 'pretendard', sans-serif;
+    color: #fff;
+    background-color: #ff00bc;
+    box-shadow: 7px 17px 0px #fff;
+    letter-spacing: -8px;
+    padding: 12px 20px;
+    height: fit-content;
+}
+
+.xxx_box:hover {
+    background-color: #C5FF35;
+    transform: translateY(-10px);
+    color: #262626;
+}
+
+
+
+.wrap {
+    width: 100%;
+    max-width: 1492px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}
+
+
+
+
+.daredemo {
+    width: 774px;
+    height: 774px;
+    background-image: url(img/bosyuu/daredemo.png);
+    background-size: 98%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.daredemo:hover {
+    animation: rotateOnce 0.5s ease-in-out;
+}
+
+@keyframes rotateOnce {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.circle {
+    width: 260px;
+    height: 100px;
+    background-color: #ff00c8;
+    color: #fff600;
+    font: 700 66px 'pretendard', sans-serif;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.daredemo h4 {
+    color: #262626;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.daredemo h5 {
+    color: #ff00bc;
+    letter-spacing: 0.75em;
+    text-align: center;
+    text-shadow: 5px 4px 0px #FFFFFF;
+    padding-bottom: 32px;
+}
+
+.daredemo p {
+    font: 700 32px 'pretendard', sans-serif;
+    color: #fff;
+    background-color: #ff00bc;
+    width: 388px;
+    text-align: center;
+}
+
+.center {
+    margin: 26px 0;
+}
+
+
+.mensetsu {
+    width: 678px;
+    height: 528px;
+    background-color: #fff;
+    border: 1px solid #121212;
+    color: #262626;
+    margin: auto;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 가로 중앙 */
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.mensetsu span {
+    color: #ff00bc;
+}
+
+.emoji {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+    /* 텍스트 기준으로 정렬 보정 */
+}
+
+.mensetsu p {
+    color: #ff00bc;
+    /* line-height: 64px; */
+    letter-spacing: -2px;
+    background-color: #fff600;
+    width: 100%;
+}
+
+.mensetsu:hover {
+    animation: shake 0.5s;
+}
+
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate(-2px, 2px) rotate(-2deg);
+    }
+
+    40% {
+        transform: translate(-2px, -2px) rotate(2deg);
+    }
+
+    60% {
+        transform: translate(2px, 2px) rotate(0deg);
+    }
+
+    80% {
+        transform: translate(2px, -2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+
+
+
+
+
+
+.x {
+    width: 100%;
+    /* max-width: 1492px; */
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+    height: 340px;
+
+}
+
+.x h3 {
+    font-size: clamp(44px, 8vw, 66px);
+}
+
+.spacing-animate {
+    display: inline-block;
+    animation: spacingPulse 1.5s ease infinite, squish 1s ease infinite;
+    mix-blend-mode: difference;
+    color: #fff;
+}
+
+@keyframes spacingPulse {
+
+    0%,
+    100% {
+        letter-spacing: 0px;
+    }
+
+    50% {
+        letter-spacing: 60px;
+    }
+}
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+    mix-blend-mode: difference;
+}
+
+footer h3 {
+    color: #ffffff;
+    margin-bottom: 18px;
+    font-size: 40px;
+}
+
+
+footer p {
+    color: #fff;
+    font: 200 16px 'pretendar', sans-serif;
+
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* 태블릿용 (768px ~ 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+        background-position: center;
+    }
+
+    h1 {
+        font-size: clamp(90px, 12vw, 120px);
+    }
+
+    .title {
+        text-align: center;
+        height: 574px;
+        padding: 80px 0 30px 0;
+    }
+
+    .title h1 {
+        line-height: 100px;
+    }
+
+    .xxx_wrap {
+        gap: 24px;
+        padding: 0 0 50px 0;
+    }
+
+    .x {
+        padding-top: 200px;
+        height: 400px;
+        margin-bottom: 200px;
+    }
+
+
+
+
+    @keyframes spacingPulse {
+
+        0%,
+        100% {
+            letter-spacing: 0px;
+        }
+
+        50% {
+            letter-spacing: 30px;
+        }
+    }
+
+
+
+}
+
+
+/* 모바일용 (최대 767px) */
+@media screen and (max-width: 767px) {
+
+    body {
+        background-position: center;
+    }
+
+    h1 {
+        font-size: clamp(44px, 10vw, 66px);
+        letter-spacing: -5px;
+    }
+
+    h2 {
+        font: 700 clamp(32px, 2vw, 44px) 'pretendard', sans-serif;
+        letter-spacing: -12px;
+        color: #262626;
+    }
+
+    h3 {
+        font: 700 32px 'pretendard', sans-serif;
+        letter-spacing: -4px;
+        color: #262626;
+    }
+
+
+    h4 {
+        font: 700 18px 'pretendard', sans-serif;
+        letter-spacing: -4px;
+        color: #262626;
+    }
+
+    h5 {
+        font: 700 16px 'pretendard', sans-serif;
+        letter-spacing: -4px;
+        color: #262626;
+    }
+
+
+
+    p {
+        font: 400 18px 'pretendard', sans-serif;
+        color: #262626;
+    }
+
+    .breaking h2 {
+        font-size: 32px;
+        letter-spacing: -4px;
+        margin: 0 0.5rem;
+    }
+
+    .title {
+        padding: 50px 0 0 0;
+        height: auto;
+    }
+
+    .title h1 {
+        margin: 12px 0 22px 0;
+        line-height: 60px;
+    }
+
+    .title h3 {
+        font-size: 24px;
+    }
+
+
+    .xxx_wrap {
+        gap: 18px;
+    }
+
+    .xxx_box {
+        font: 700 32px/36px 'pretendard', sans-serif;
+        padding: 8px 12px;
+        box-shadow: 4px 8px 0px #fff;
+        letter-spacing: -4px;
+    }
+
+    .daredemo p {
+        font: 700 16px 'pretendard', sans-serif;
+        width: 190px;
+    }
+
+
+    .center {
+        margin: 8px 0;
+    }
+
+    .daredemo {
+        width: 343px;
+        height: 343px;
+    }
+
+    .circle {
+        font-size: 32px;
+        width: 130px;
+        height: 50px;
+    }
+
+    .daredemo h5 {
+        padding-bottom: 6px;
+        text-shadow: 3px 2px 0px #FFFFFF;
+    }
+
+    .mensetsu {
+        width: 343px;
+        height: 228px;
+    }
+
+    .mensetsu p {
+        line-height: 20px;
+        letter-spacing: -1px;
+    }
+
+
+
+
+    .x h3 {
+        font-size: clamp(32px, 4vw, 44px);
+    }
+
+
+
+    footer h3 {
+        margin-bottom: 6px;
+        font-size: 24px;
+        padding-top: 80px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+}
