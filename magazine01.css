@@ -1,0 +1,761 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+html,
+body {
+    /* height: 100%; */
+    width: 100%;
+    user-select: none;
+    overflow-x: hidden;
+    font-family: 'pretendard', sans-serif;
+}
+
+/* font */
+h1 {
+    font: 700 clamp(44px, 6vw, 66px) 'pretendard', sans-serif;
+    letter-spacing: -4px;
+    color: #262626;
+}
+
+
+h2 {
+    font: 700 48px 'pretendard', sans-serif;
+    letter-spacing: -4px;
+    color: #262626;
+}
+
+h3 {
+    font: 700 32px 'pretendard', sans-serif;
+    letter-spacing: -2px;
+    color: #262626;
+}
+
+
+h4 {
+    font: 700 24px 'pretendard', sans-serif;
+    letter-spacing: -2px;
+    color: #262626;
+}
+
+
+
+p {
+    font: 400 20px 'pretendard', sans-serif;
+    color: #262626;
+}
+
+
+
+.window-bar {
+    background: linear-gradient(180deg, #EEEEEE 6.25%, #FFFFFF 37.98%, #D9D9D9 100%);
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.window-url {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.window-url a {
+    text-decoration: none;
+    color: #555;
+}
+
+.window-url a span:first-child {
+    display: none;
+}
+
+.window-url a:hover {
+    color: #C5FF35;
+}
+
+.window-url a:hover span:first-child {
+    display: inline;
+}
+
+.window-url a:hover span:last-child {
+    opacity: 0;
+}
+
+.window-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.window-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red {
+    background-color: #999;
+}
+
+.dot.yellow {
+    background-color: #6B6B6B;
+}
+
+.dot.green {
+    background-color: #c2c2c2;
+}
+
+#bg {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url(img/magazine/magazine_naka_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/* header */
+
+#gnb {
+    display: flex;
+    flex-direction: column;
+    padding: 66px 5vw;
+    align-items: center;
+}
+
+#gnb h3 {
+    color: #262626;
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 48px;
+    /* background-color: #C5FF35;
+    height: fit-content; */
+    line-height: 44px;
+}
+
+.menu {
+    width: 100%;
+    padding: 1rem 5vw;
+    border-bottom: 1px solid #121212;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(12px, 8vw, 140px);
+    justify-content: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font: 400 clamp(12px, 2vw, 24px) 'Pretendard', sans-serif;
+    color: #262626;
+}
+
+.menu ul li a:hover {
+    color: #262626;
+    background-color: #C5FF35;
+}
+
+
+
+/* s1 */
+#s1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+
+}
+
+.naka {
+    width: 1176px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #121212;
+    text-align: center;
+    overflow: hidden;
+    padding: 90px 60px 0px 60px;
+    margin: auto;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.naka h2 {
+    padding: 50px 0;
+}
+
+.naka img {
+    padding: 86px 0;
+    width: 100%;
+}
+
+.naka h4 {
+    text-align: left;
+    color: #262626;
+}
+
+.nai {
+    text-align: left;
+    color: #262626;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.nai span {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+/* 운세 */
+
+#popup {
+    width: 100%;
+    max-width: 276px;
+    height: 654px;
+    background-image: url(img/s1_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 72px;
+    /* z-index: 999; */
+    top: 2400px;
+    position: absolute;
+    transition: top 0.3s ease;
+    text-align: center;
+    padding-top: 42px;
+    animation: ani 1s infinite alternate;
+}
+
+.mobilecontainer {
+    display: none;
+}
+
+
+#popup h3 {
+    font: 700 clamp(44px, 4vw, 66px) 'pretendard', sans-serif;
+    color: #ff00bc;
+}
+
+#popup p {
+    color: #fff;
+    padding: 24px 0px 60px 0px;
+    font-size: 20px;
+}
+
+#popup a {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#popup a:hover {
+    mix-blend-mode: difference;
+}
+
+
+
+#popup2 {
+    width: 100%;
+    max-width: 276px;
+    height: auto;
+    background-image: url(img/tenshi_bosyuu_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 72px;
+    /* z-index: 999; */
+    top: 1300px;
+    position: absolute;
+    transition: top 0.3s ease;
+    text-align: center;
+    animation: ani 1s infinite alternate;
+
+}
+
+.mobilecontainer {
+    display: none;
+}
+
+
+#popup2 h3 {
+    color: #121212;
+    background-color: #fff;
+    mix-blend-mode: difference;
+}
+
+.circle {
+    width: 214px;
+    height: 56px;
+    background-color: #fff600;
+    color: #fff;
+    -webkit-text-stroke: 0.5px #121212;
+    border: 1px solid #121212;
+    font: 700 24px 'pretendard', sans-serif;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 38px auto;
+}
+
+#popup2 span {
+    color: #fff;
+    font: 700 34px/30px 'pretendard', sans-serif;
+    color: #262626;
+    text-shadow: 0 0 2px #00FFFD;
+    letter-spacing: -4px;
+}
+
+#popup2 a {
+    font-size: 32px;
+    color: #ff00bc;
+    font-weight: 700;
+    line-height: 100px;
+}
+
+.xxx {
+    width: 218px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+    padding: 24px 0 20px 0;
+}
+
+.xxx p {
+    font: 700 24px/44px 'pretendard', sans-serif;
+    background-color: #00FFFD;
+    border: 1px solid #121212;
+    color: #fff;
+    -webkit-text-stroke: 0.5px #121212;
+    letter-spacing: -4px;
+}
+
+#popup2 a:hover {
+    mix-blend-mode: difference;
+}
+
+@keyframes ani {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 10px);
+    }
+}
+
+
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 240px;
+    padding-bottom: 32px;
+    margin: auto;
+    text-align: center;
+}
+
+footer h3 {
+    color: #262626;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 28px auto;
+}
+
+footer h5 {
+    font-size: 22px;
+    line-height: 24px;
+    color: #C5FF35;
+    padding-bottom: 32px;
+}
+
+
+footer p {
+    color: #262626;
+    font: 200 16px 'pretendar', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* 태블릿용 (768px ~ 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    #gnb {
+        padding: 46px 24px;
+        width: 100%;
+    }
+
+    .menu ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: clamp(32px, 2vw, 44px);
+        justify-content: center;
+    }
+
+    #s1 {
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+
+    .naka {
+        width: 736px;
+        height: auto;
+        background-color: #fff;
+        border: 1px solid #121212;
+        text-align: center;
+        overflow: hidden;
+        padding: 90px 60px 0px 60px;
+        margin: auto;
+    }
+
+
+    .mobilecontainer {
+        display: block;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 100px;
+    }
+
+    #popup,
+    #popup2 {
+        display: none;
+    }
+
+    .uranai {
+        max-width: 100%;
+        height: 158px;
+        padding: 1rem 0;
+        background-image: url(img/s1_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        animation: ani 1s infinite alternate;
+    }
+
+    .uranai h1 {
+        color: #FF00BC;
+        font-size: clamp(24px, 4vw, 32px);
+        letter-spacing: -2px;
+        line-height: clamp(24px, 4vw, 32px);
+    }
+
+    .uranai h5 {
+        color: #262626;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #fff;
+        width: fit-content;
+        line-height: 18px;
+        display: inline-block;
+        margin: 6px 0;
+    }
+
+    .uranai a {
+        color: #fff;
+        background-color: #FF00BC;
+        font: 700 24px/24px'Pretendard', sans-serif;
+        display: inline-block;
+        margin-top: 0px;
+        /* mix-blend-mode: difference; */
+    }
+
+    .uranai a:hover {
+        mix-blend-mode: difference;
+    }
+
+    .bosyuu {
+        width: 100%;
+        height: 158px;
+        background-image: url(img/tenshi_bosyuu_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center -344px;
+        text-align: center;
+        padding-top: 8px;
+        animation: ani 1s infinite alternate;
+        box-shadow: 0 0 20px #C5FF35;
+    }
+
+
+
+    .bosyuu h2 {
+        color: #FF00BC;
+        line-height: clamp(32px, 6vw, 44px);
+        font: 700 clamp(32px, 6vw, 44px) 'pretendard', sans-serif;
+        padding: 0;
+    }
+
+    .bosyuu h3 {
+        color: #262626;
+        line-height: clamp(18px, 6vw, 38px);
+        font: 700 clamp(24px, 4vw, 32px) 'pretendard', sans-serif;
+    }
+
+    .bosyuu p {
+        color: #262626;
+        font: 400 clamp(24px, 2vw, 32px)/32px'pretendard', sans-serif;
+
+    }
+
+    .bosyuu a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #FF00BC;
+        font: 700 16px/18px 'pretendard', sans-serif;
+    }
+
+    .bosyuu a:hover {
+        color: #262626;
+        background-color: #C5FF35;
+    }
+
+
+}
+
+
+/* 모바일용 (최대 767px) */
+@media screen and (max-width: 767px) {
+
+    #gnb {
+        gap: 0;
+        padding: 28px 0;
+    }
+
+    #gnb h3 {
+        font-size: 40px;
+        margin-bottom: 8px;
+    }
+
+    .menu {
+        width:90%;
+        padding: 18px 18px;
+    }
+
+    .menu ul {
+        /* flex-direction: column; */
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .menu ul li a {
+        font: 400 clamp(8px, 2vw, 16px) 'Pretendard', sans-serif;
+    }
+
+    h1 {
+        font: 700 clamp(24px, 4vw, 32px) 'pretendard', sans-serif;
+        letter-spacing: -4px;
+        color: #262626;
+    }
+
+
+    h2 {
+        font: 700 32px'pretendard', sans-serif;
+        letter-spacing: -2px;
+    }
+
+
+
+    h4 {
+        font: 700 16px 'pretendard', sans-serif;
+        letter-spacing: -2px;
+        color: #262626;
+    }
+
+
+
+    p {
+        font: 400 16px 'pretendard', sans-serif;
+        color: #262626;
+    }
+
+
+    #s1 {
+        padding: 0 18px;
+        display: block;
+        margin: auto;
+        height: auto;
+    }
+
+    .naka {
+        width: 100%;
+        min-width: 325px;
+        border: 0.5px solid #121212;
+        padding: 56px 14px 0px 14px;
+    }
+
+    .naka img {
+        padding: 56px 0;
+
+    }
+
+
+
+    .nai {
+
+        font-size: 12px;
+        line-height: 18px;
+
+    }
+
+
+    .mobilecontainer {
+        display: block;
+        margin: auto;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    #popup,
+    #popup2 {
+        display: none;
+    }
+
+    .uranai {
+        max-width: 100%;
+        height: 120px;
+        padding: 1rem 0;
+        background-image: url(img/s1_bg.jpg);
+        background-size: cover;
+        background-position: center;
+        animation: ani 1s infinite alternate;
+    }
+
+    .uranai h1 {
+        color: #FF00BC;
+        font-size: 24px;
+        letter-spacing: -2px;
+        line-height: 24px;
+    }
+
+    .uranai h5 {
+        color: #262626;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #fff;
+        width: fit-content;
+        line-height: 18px;
+        display: inline-block;
+        margin: 6px 0;
+    }
+
+    .uranai a {
+        color: #fff;
+        background-color: #FF00BC;
+        font: 700 24px/24px'Pretendard', sans-serif;
+        display: inline-block;
+        margin-top: 0px;
+        /* mix-blend-mode: difference; */
+    }
+
+    .uranai a:hover {
+        mix-blend-mode: difference;
+    }
+
+    .bosyuu {
+        width: 100%;
+        height: 120px;
+        background-image: url(img/tenshi_bosyuu_bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        padding-top: 8px;
+        animation: ani 1s infinite alternate;
+        box-shadow: 0 0 20px #C5FF35;
+    }
+
+
+
+    .bosyuu h2 {
+        color: #FF00BC;
+        line-height: 24px;
+        font: 700 32px 'pretendard', sans-serif;
+        padding: 0;
+        line-height: 24px;
+    }
+
+    .bosyuu h3 {
+        color: #262626;
+        line-height: 24px;
+        font: 700 24px 'pretendard', sans-serif;
+    }
+
+    .bosyuu p {
+        color: #262626;
+        font: 400 16px'pretendard', sans-serif;
+        line-height: 32px;
+    }
+
+    .bosyuu a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #FF00BC;
+        font: 700 16px/18px 'pretendard', sans-serif;
+    }
+
+    .bosyuu a:hover {
+        color: #262626;
+        background-color: #C5FF35;
+    }
+
+    footer {
+        height: auto;
+        padding-top: 120px;
+    }
+
+    footer h3 {
+        margin: 6px 0;
+        font-size: 24px;
+    }
+
+    footer h5 {
+        padding-bottom: 6px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    footer p {
+        font: 200 10px/0px 'pretendar', sans-serif;
+        letter-spacing: 0px;
+        padding-bottom: 24px;
+    }
+
+}
