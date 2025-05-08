@@ -142,11 +142,15 @@ p {
 }
 
 #gnb h3 {
-  color: #262626;
+  color: #fff;
   font-size: 44px;
   text-align: center;
   margin-bottom: 112px;
-
+  -webkit-text-stroke: 1px #FF00BC;
+}
+#gnb h3:hover {
+  color: #FF00BC;
+  -webkit-text-stroke: 1px #FFf;
 }
 
 
@@ -168,7 +172,7 @@ p {
 .menu ul li a {
   text-decoration: none;
   font: 400 24px 'Pretendard', sans-serif;
-  color: #262626;
+  color: #fff;
 }
 
 .menu ul li a:hover {
@@ -717,7 +721,7 @@ p {
   background-image: url(img/tenshi_bosyuu_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -240px;
+  background-position: center -344px;
   text-align: center;
   padding-top: 40px;
   animation: ani 1s infinite alternate;
@@ -774,7 +778,7 @@ footer h3 {
 
 footer p {
   color: #fff;
-  font: 200 16px 'pretendar', sans-serif;
+  font: 200 10px 'pretendar', sans-serif;
 }
 
 footer a {
