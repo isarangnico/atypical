@@ -180,11 +180,12 @@ p {
 
 
 .gif {
+    position: relative; 
     width: 100%;
     max-width: 1112px;
-    height: auto;
     aspect-ratio: 1 / 1;
     margin-top: 5vh;
+    height: 100%;
 }
 
 .gif img {
@@ -192,56 +193,22 @@ p {
     max-width: 100%;
     height: auto;
 }
-
-.weno {
+.label {
+    position: absolute;
     color: #262626;
     background-color: #C5FF35;
+    font: 200 20px 'pretendard', sans-serif;
+    line-height: 22px;
     width: fit-content;
     height: fit-content;
-    font: 200 20px 'pretendard', sans-serif;
     letter-spacing: -2px;
-    position: absolute;
-    bottom: 20%;
-    left: 46%;
-}
-
-.atypical {
-    color: #262626;
-    background-color: #C5FF35;
-    width: fit-content;
-    height: fit-content;
-    font: 200 20px 'pretendard', sans-serif;
-    letter-spacing: -2px;
-    position: absolute;
-    bottom: 18%;
-    left: 47%;
-}
-
-.weno2 {
-    color: #262626;
-    background-color: #C5FF35;
-    width: fit-content;
-    height: fit-content;
-    font: 200 20px 'pretendard', sans-serif;
-    letter-spacing: -2px;
-    position: absolute;
-    bottom: -30%;
-    left: 26%;
-}
-
-.atypical2 {
-    color: #262626;
-    background-color: #C5FF35;
-    width: fit-content;
-    height: fit-content;
-    font: 200 20px 'pretendard', sans-serif;
-    letter-spacing: -2px;
-    position: absolute;
-    bottom: -32%;
-    left: 27%;
-}
-
-
+  }
+  
+  /* 위치만 따로 조정 */
+  .weno { top: 20%; left: 46%; }
+  .atypical { top: 22%; left: 47%; }
+  .weno2 { bottom: 32%; left: 16%; }
+  .atypical2 { bottom: 30%; left: 17%; }
 
 
 
@@ -559,18 +526,22 @@ footer a {
 
 
 
-    .weno2 {
-
-        bottom: -8%;
-        left: 16%;
-    }
-
-    .atypical2 {
-
-        bottom: -10%;
-        left: 17%;
-    }
-
+    .label {
+        position: absolute;
+        color: #262626;
+        background-color: #C5FF35;
+        font: 200 18px 'pretendard', sans-serif;
+        line-height: 22px;
+        width: fit-content;
+        height: fit-content;
+        letter-spacing: -2px;
+      }
+      
+      /* 위치만 따로 조정 */
+      .weno { top: 20%; left: 46%; }
+      .atypical { top: 24%; left: 47%; }
+      .weno2 { bottom: 34%; left: 16%; }
+      .atypical2 { bottom: 30%; left: 17%; }
 
 
     #s2 {
@@ -703,35 +674,17 @@ footer a {
         padding: 0 18px;
     }
 
-    .weno {
-        font-size: clamp(12px, 2.5vw, 16px);
-        bottom: 46%;
-        left: 46%;
+
+    .label {
+        font: 200 clamp(12px, 2.5vw, 16px) 'pretendard', sans-serif;
         line-height: 12px;
-    }
+      }
 
-    .atypical {
-        font-size: clamp(12px, 2.5vw, 16px);
-        bottom: 45%;
-        left: 47%;
-        line-height: 12px;
-    }
-
-
-    .weno2 {
-        font-size: clamp(12px, 2.5vw, 16px);
-        bottom: 31%;
-        left: 16%;
-        line-height: 12px;
-    }
-
-    .atypical2 {
-        font-size: clamp(12px, 2.5vw, 16px);
-        bottom: 30%;
-        left: 17%;
-        line-height: 12px;
-    }
-
+    .weno { top: 40%; left: 46%; }
+    .atypical { top: 43%; left: 47%; }
+    .weno2 { bottom: 33%; left: 16%; }
+    .atypical2 { bottom: 30%; left: 17%; }
+  
 
 
 
@@ -771,6 +724,21 @@ footer a {
         letter-spacing: -1px;
     }
 
+
+
+    
+    .s4_box1,
+    .s4_box2,
+    .s4_box3,
+    .s4_box4,
+    .s4_box5 {
+        width: 100%;
+        height: 100%;
+        min-width: 96px;
+        min-height: 200px;
+    }
+
+
     .filter-buttons {
         display: flex;
         flex-direction: row;
@@ -787,10 +755,12 @@ footer a {
     .wrap {
         gap: 18px;
         padding-top: 18px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr))
     }
 
 
-    .mobile {
+    .mobile2 {
         display: none;
     }
 
@@ -817,15 +787,5 @@ footer a {
         letter-spacing: 0px;
     }
 
-    .s4_box1,
-    .s4_box2,
-    .s4_box3,
-    .s4_box4,
-    .s4_box5 {
-        width: 100%;
-        height: 100%;
-        min-width: 96px;
-        min-height: 144px;
-    }
 
 }
