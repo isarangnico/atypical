@@ -169,6 +169,148 @@ p {
 }
 
 
+
+/* popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 24px;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 24px;
+    position: relative;
+    background-image: url(img/shopping/pop_bg.jpg);
+    background-position: center;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.close-btn {
+    margin-top: 24px;
+    font-size: clamp(24px, 2vw, 32px);
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    text-decoration: underline;
+    text-shadow: 0 0 24px #fff;
+}
+
+.close-btn:hover {
+    color: #ff00bc;
+    letter-spacing: -4px;
+}
+
+
+.popup h2,
+p {
+    color: #fff;
+    text-shadow: 0 0 24px #fff;
+}
+
+.h2 {
+    background-color: #FF00BC;
+    mix-blend-mode: screen;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.popup h3 {
+    color: #fff;
+    text-shadow: 0 0 24px #fff;
+    line-height: 66px;
+}
+
+.setsumei {
+    position: absolute;
+    font-size: 12px;
+    text-align: left;
+    bottom: 24px;
+    left: 24px;
+}
+
+
+.popup a {
+    font-size: 44px;
+    color: #fff;
+    text-shadow: 0 0 24px #fff;
+    background-color: #FF00BC;
+    mix-blend-mode: screen;
+    padding: 6px 10px;
+    font-weight: 700;
+    letter-spacing: -4px;
+}
+
+.popup a:hover {
+    /* color: #1212; */
+    mix-blend-mode: normal;
+}
+
+
+.coupon {
+    background-image: url(img/shopping/coupon.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 1070px;
+    max-height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 22px auto 44px auto;
+    mix-blend-mode: screen;
+    animation: squish 1s ease-in-out infinite;
+    transform-origin: center;
+}
+
+@keyframes squish {
+
+    0%,
+    100% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(0.0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #s1 {
     width: 100%;
     display: flex;
@@ -180,7 +322,7 @@ p {
 
 
 .gif {
-    position: relative; 
+    position: relative;
     width: 100%;
     max-width: 1112px;
     aspect-ratio: 1 / 1;
@@ -193,6 +335,7 @@ p {
     max-width: 100%;
     height: auto;
 }
+
 .label {
     position: absolute;
     color: #262626;
@@ -202,13 +345,28 @@ p {
     width: fit-content;
     height: fit-content;
     letter-spacing: -2px;
-  }
-  
-  /* 위치만 따로 조정 */
-  .weno { top: 20%; left: 46%; }
-  .atypical { top: 22%; left: 47%; }
-  .weno2 { bottom: 32%; left: 16%; }
-  .atypical2 { bottom: 30%; left: 17%; }
+}
+
+/* 위치만 따로 조정 */
+.weno {
+    top: 20%;
+    left: 46%;
+}
+
+.atypical {
+    top: 22%;
+    left: 47%;
+}
+
+.weno2 {
+    bottom: 32%;
+    left: 16%;
+}
+
+.atypical2 {
+    bottom: 30%;
+    left: 17%;
+}
 
 
 
@@ -514,6 +672,33 @@ footer a {
         font-size: 20px;
     }
 
+    .popup {
+        padding: 56px 72px;
+    }
+
+    .coupon {
+        max-width: 1070px;
+        max-height: 280px;
+        margin: 22px auto 24px auto;
+    }
+
+
+    .h2 {
+        font-size: clamp(66px, 8vw, 80px);
+        padding: 0 24px;
+    }
+
+    .popup h3 {
+        color: #fff;
+        text-shadow: 0 0 24px #fff;
+        line-height: 66px;
+        font-size: clamp(44px, 6vw, 66px);
+    }
+    
+
+    .close-btn {
+        margin-top: 12px;
+    }
 
 
 
@@ -535,13 +720,28 @@ footer a {
         width: fit-content;
         height: fit-content;
         letter-spacing: -2px;
-      }
-      
-      /* 위치만 따로 조정 */
-      .weno { top: 20%; left: 46%; }
-      .atypical { top: 24%; left: 47%; }
-      .weno2 { bottom: 34%; left: 16%; }
-      .atypical2 { bottom: 30%; left: 17%; }
+    }
+
+    /* 위치만 따로 조정 */
+    .weno {
+        top: 20%;
+        left: 46%;
+    }
+
+    .atypical {
+        top: 24%;
+        left: 47%;
+    }
+
+    .weno2 {
+        bottom: 34%;
+        left: 16%;
+    }
+
+    .atypical2 {
+        bottom: 30%;
+        left: 17%;
+    }
 
 
     #s2 {
@@ -670,6 +870,64 @@ footer a {
         font-size: 16px;
     }
 
+    .popup {
+        padding: 258px 32px;
+    }
+
+    .popup-content {
+        background-image: url(img/shopping/pop_div_bg.jpg);
+        background-size: cover;
+    }
+
+    .close-btn {
+        margin-top: 12px;
+        font-size: clamp(12px, 2vw, 16px);
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 700;
+        text-decoration: underline;
+        text-shadow: 0 0 24px #fff;
+        padding-bottom: 24px;
+    }
+
+    .close-btn:hover {
+        color: #ff00bc;
+        letter-spacing: -2px;
+    }
+    
+    .popup a {
+        font-size: 16px;
+        padding: 4px 6px;
+        font-weight: 700;
+        letter-spacing: -2px;
+    }
+    
+
+    .h2 {
+        font-size: clamp(24px, 4vw, 32px);
+        padding: 0 24px;
+    }
+
+
+
+    .coupon {
+        max-height: 110px;
+    }
+
+
+
+
+    .setsumei {
+        position: unset;
+        font-size: 10px;
+        text-align: center;
+    }
+    
+
+
+
     #s1 {
         padding: 0 18px;
     }
@@ -678,13 +936,28 @@ footer a {
     .label {
         font: 200 clamp(12px, 2.5vw, 16px) 'pretendard', sans-serif;
         line-height: 12px;
-      }
+    }
 
-    .weno { top: 40%; left: 46%; }
-    .atypical { top: 43%; left: 47%; }
-    .weno2 { bottom: 33%; left: 16%; }
-    .atypical2 { bottom: 30%; left: 17%; }
-  
+    .weno {
+        top: 40%;
+        left: 46%;
+    }
+
+    .atypical {
+        top: 43%;
+        left: 47%;
+    }
+
+    .weno2 {
+        bottom: 33%;
+        left: 16%;
+    }
+
+    .atypical2 {
+        bottom: 30%;
+        left: 17%;
+    }
+
 
 
 
@@ -726,7 +999,7 @@ footer a {
 
 
 
-    
+
     .s4_box1,
     .s4_box2,
     .s4_box3,
@@ -737,8 +1010,6 @@ footer a {
         min-width: 96px;
         min-height: 240px;
     }
-
-
 
 
     .filter-buttons {
