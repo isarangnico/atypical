@@ -1,0 +1,90 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    user-select: none;
+    overflow: hidden;
+    font-family: 'pretendard', sans-serif;
+    background-color: #FFF600;
+}
+
+
+.emoji {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+    /* 텍스트 기준으로 정렬 보정 */
+}
+
+#s1 {
+    width: 100%;
+    margin: auto;
+
+}
+
+
+.s1 {
+    width: 100%;
+    height: 100%;
+    max-width: 876px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;   
+    padding : 120px clamp(24px, 8vw, 44px) 0 clamp(24px, 8vw, 44px);
+}
+
+.s1 h1 {
+    color: #ff00bc;
+    font-size: clamp(24px, 8vw, 44px);
+    text-align: center;
+    letter-spacing: -4px;
+    position: relative;
+}
+
+.default-text,
+.hover-text {
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.hover-text {
+    display: none;
+}
+
+.s1 h1:hover .default-text {
+    display: none;
+}
+
+.s1 h1:hover .hover-text {
+    display: block;
+}
+
+.s1 a {
+    /* text-decoration: none; */
+    color: #ff00bc;
+    
+}
+
+.img {
+    width: 90%;
+    animation: ani 1s infinite alternate;
+    padding-bottom: 50px;
+}
+
+@keyframes ani {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0, 20px);
+    }
+}
