@@ -16,13 +16,13 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
- <!-- jQuery (HTTPS로!) -->
- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery (HTTPS로!) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
- <!-- Slick -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
- <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </head>
 
@@ -59,6 +59,35 @@
         </div>
     </header>
 
+
+
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+
+            <h2 class="h2">COUPON BUNDLE</h2>
+            <h3>당신은 곧 받을 것입니다</h3>
+
+            <div class="coupon">
+                <h2>20% 할인</h2>
+                <p>키즈 품목 한정, 130만원 이상 결제시 사용가능</p>
+            </div>
+
+            
+            <a href="#">»얻으려면 클릭하세요«</a>
+            <span class="close-btn"><span>이 화면을 떠나고 손해보기</span>
+            </span>
+
+            <p class="setsumei">쿠폰 사용 기한 : 개봉 후 일주일 <br>
+                천사 고유 넘버 인증 후 ID당 1회 사용 가능합니다. <br>
+                지급된 쿠폰은 ‘마이 페이지 > 쿠폰 조회’ 에서 ‘깎아주세요' 후 확인할 수 있습니다</p>
+        </div>
+    </div>
+
+
+
+
     <section id="s1">
 
         <div class="gif">
@@ -91,13 +120,13 @@
 
 
     <section id="s3">
-        
+
         <div class="slider-container">
             <div class="star-label label1">되게예쁜옷</div>
             <div class="star-label label2">자유로운사이즈</div>
             <div class="star-label label3">유명천사착용</div>
             <div class="main_slider bg">
-                
+
                 <div class="s3_box">
                     <img src="img/shopping/s3_01.png" alt="">
                     <p>$20,020,709</p>
@@ -145,27 +174,27 @@
             <button class="filter-btn" data-filter="romantic">STREET</button>
             <button class="filter-btn" data-filter="romantic">SPORYT</button>
             <button class="filter-btn" data-filter="romantic">CHIC</button>
-          </div>
+        </div>
 
-          <div class="wrap">
+        <div class="wrap">
             <div class="s4_box1">
-    
+
             </div>
             <div class="s4_box2  mobile">
-               
+
             </div>
             <div class="s4_box3">
-                
+
             </div>
             <div class="s4_box4">
-              
+
             </div>
             <div class="s4_box5 mobile mobile2">
-                
+
             </div>
-          </div>
-        
-          <footer>
+        </div>
+
+        <footer>
             <h5>祝你生日快樂! <br>
                 王奕翔</h5>
             <a href="index.html">
@@ -192,19 +221,19 @@
 
 
 
-<script>
-    const buttons = document.querySelectorAll('.filter-btn');
+    <script>
+        const buttons = document.querySelectorAll('.filter-btn');
 
-buttons.forEach(btn => {
-  btn.addEventListener('click', () => {
-  
-    buttons.forEach(b => b.classList.remove('active'));
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
 
-    btn.classList.add('active');
+                buttons.forEach(b => b.classList.remove('active'));
 
-  });
-});
-</script>
+                btn.classList.add('active');
+
+            });
+        });
+    </script>
 
     <script>
         $(document).ready(function () {
@@ -217,6 +246,30 @@ buttons.forEach(btn => {
             });
         });
     </script>
+
+
+
+<script>
+    window.onload = function () {
+      const popup = document.getElementById("popup");
+      const closeBtn = document.querySelector(".close-btn");
+  
+      // 팝업 표시
+      popup.style.display = "flex";
+  
+      // 닫기 버튼 클릭 시 닫기
+      closeBtn.onclick = function () {
+        popup.style.display = "none";
+      };
+  
+      // 배경 클릭 시 닫기
+      popup.onclick = function (e) {
+        if (e.target === popup) {
+          popup.style.display = "none";
+        }
+      };
+    };
+  </script>
 
 </body>
 
