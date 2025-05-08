@@ -635,6 +635,7 @@ footer h3 {
     width: fit-content;
     margin: 18px auto;
     height: fit-content;
+    font-weight: 400;
 }
 
 footer h5 {
