@@ -121,7 +121,14 @@ p {
   
 
 
-
+  .emoji {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.1em;
+    /* 텍스트 기준으로 정렬 보정 */
+  }
+  
+  
 
 
 
@@ -130,8 +137,10 @@ p {
 /* header */
 
 header {
-    background-image: url(img/news/news_bg.jpg);
-
+    background-image: url(img/news/news_header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #gnb {
@@ -145,7 +154,7 @@ header {
 
 #gnb h3 {
     color: #0004FF;
-    font-size: 40px;
+    font-size: 44px;
     text-align: center;
     /* font-style: italic; */
     /* mix-blend-mode: difference; */
@@ -166,6 +175,7 @@ header {
     white-space: nowrap;
     padding: 8px 0;
     transition: background-color 0.5s ease;
+    box-shadow: 0 8px 100px #fff600;
 }
 
 .track {
@@ -203,7 +213,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 3294px;
+    height: auto;
     padding: 46px clamp(24px, 4vw, 72px);
     display: flex;
     flex-direction: row;
@@ -222,13 +232,13 @@ header {
     position: relative;
     width: 100%;
     max-width: 1476px;
-    height: 3248px;
+    height: auto;
     /* background-color: #fff; */
     background-blend-mode: color-dodge;
     border: 1px solid transparent;
     border-image: linear-gradient(#121212, #ffffff);
     border-image-slice: 1;
-    padding: 116px 150px 0px 126px;
+    padding: 116px 150px 32px 126px;
     overflow: hidden;
     z-index: 0;
     margin-right: 24px;
@@ -375,7 +385,7 @@ header {
     background-image: url(img/tenshi_bosyuu_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center -240px;
+    background-position: center -344px;
     text-align: center;
     padding-top: 20px;
     animation: ani 1s infinite alternate;
@@ -624,7 +634,7 @@ header {
 footer {
     width: 100%;
     height: 600px;
-    background-image: url(img/footer.jpg);
+    background-image: url(img/news_footer.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -639,7 +649,7 @@ footer h3 {
 
 footer p {
     color: #fff;
-    font: 200 16px 'pretendar', sans-serif;
+    font: 200 10px 'pretendar', sans-serif;
 }
 
 footer a {
