@@ -872,12 +872,13 @@ footer a {
     }
 
     .popup {
-        padding: 258px 32px;
+        padding: 0 32px;
     }
 
     .popup-content {
         background-image: url(img/shopping/pop_div_bg.jpg);
         background-size: cover;
+        height: auto;
     }
 
     .close-btn {
