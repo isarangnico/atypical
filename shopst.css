@@ -914,8 +914,9 @@ footer a {
 
 
 
-    .coupon {
-        max-height: 110px;
+        .coupon {
+        padding: 12px;
+        max-height: 200px;
     }
 
 
