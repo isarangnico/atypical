@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="magazine.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- ScrollTrigger 플러그인 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
 </head>
 
 <body>
@@ -46,25 +51,21 @@
             </div>
         </header>
 
-
         <section id="s1">
 
             <div class="s1img">
-                <img src="img/magazine/s1_bg.jpg" alt="">
+                <img src="img/magazine/s1_1.png" class="img1">
+                <img src="img/magazine/s1_2.png" class="img2">
+                <img src="img/magazine/s1_3.png" class="img3">
+                <img src="img/magazine/s1_4.png" class="img4">
+                <img src="img/magazine/s1_5.png" class="img5">
+                <img src="img/magazine/s1_6.png" class="img6">
+                <img src="img/magazine/s1_7.png" class="img7">
+                <img src="img/magazine/s1_8.png" class="img8">
+                <img src="img/magazine/s1_9.png" class="img9">
+                <img src="img/magazine/s1_10.png" class="img10">
             </div>
-            <!-- <div class="s1_container">
-                <div class="wrap">
-                    <div class="s1_title">
-                        <img src="img/magazine/s1_title.png" alt="">
-                        <p>I want to show you Nicholas, who is cool on stage and has good energy.
-                            I think it's even nicer to be able to give good energy to people around
-                            me and feel at ease. You think it's better to do whatever you want at first.
-                            However, if you do whatever you want, it can cause inconvenience to the people around you.
-                            I want to be a person who can do both things properly and
-                            take good care of the people around me.</p>
-                    </div>
-                </div>
-            </div> -->
+        
         </section>
 
         <section id="s2">
@@ -136,6 +137,30 @@
     <script>
         AOS.init();
     </script>
+
+<script>
+// GSAP 등록
+gsap.registerPlugin(ScrollTrigger);
+
+// 이미지 선택 (NodeList를 배열로 변환해서 뒤집음)
+const images = Array.from(document.querySelectorAll('.s1img img')).reverse();
+
+images.forEach((img, i) => {
+  gsap.from(img, {
+    scrollTrigger: {
+      trigger: "#s1",
+      start: "top center+=100",
+      toggleActions: "play none none none"
+    },
+    opacity: 0,
+    y: 80,
+    scale: 0.5,
+    duration: 0.8,
+    ease: "back.out(1.7)",
+    delay: i * 0.15
+  });
+});
+  </script>
 
 </body>
 
