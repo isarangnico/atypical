@@ -1058,9 +1058,12 @@ footer a {
 
   #gnb h3 {
     font-size: 40px;
+    margin-bottom: 18px;
   }
 
-
+ #gnb {
+  padding: 60px 0;
+ }
 
   .menu ul {
     /* flex-direction: column; */
@@ -1078,7 +1081,7 @@ footer a {
 
   #s1 {
     height: 320px;
-    padding-top: 66px;
+    padding-top: 44px;
   }
 
   .uranai {
