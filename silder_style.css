@@ -83,16 +83,18 @@
       
   .main_slider button::before {
   
-    font-size: 24px;
+    font-size: 34px;
   
-    color: #fff;
+    color: #ff00bc;
+
+    
   
   }
 
 
   .main_slider button.slick-prev {
   
-    left: 18px;
+    left: 4px;
   
     font-size: 0;
   
@@ -103,7 +105,7 @@
   
   .main_slider button.slick-next {
   
-    right: 18px;
+    right: 4px;
   
     font-size: 0;
   
@@ -114,7 +116,7 @@
 
   .main_slider button.slick-prev::before {
   
-    content: "◀";
+    content: "«";
   
     font-family: "xeicon";
   
@@ -122,7 +124,7 @@
 
   .main_slider button.slick-next::before {
   
-    content: "▶";
+    content: "»";
   
     font-family: "xeicon";
   
@@ -136,10 +138,9 @@
   @media screen and (max-width: 767px){
       
     .main_slider button::before {
-    
-      font-size: 16px;
-    
-      color: #fff;
+    font-size: 34px;
+  
+    color: #ff00bc;
     
     }
   
@@ -168,7 +169,7 @@
   
     .main_slider button.slick-prev::before {
     
-      content: "◀";
+      content: "«";
     
       font-family: "xeicon";
     
@@ -176,7 +177,7 @@
   
     .main_slider button.slick-next::before {
     
-      content: "▶";
+      content: "»";
     
       font-family: "xeicon";
     
