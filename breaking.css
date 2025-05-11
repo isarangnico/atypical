@@ -67,68 +67,68 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .window-url {
+}
+
+.window-url {
     font-size: 0.9rem;
     color: #555;
-  }
-  
-  .window-url a {
+}
+
+.window-url a {
     text-decoration: none;
     color: #555;
-  }
-  
-  .window-url a span:first-child {
+}
+
+.window-url a span:first-child {
     display: none;
-  }
-  
-  .window-url a:hover {
+}
+
+.window-url a:hover {
     color: #0004FF;
-  }
-  
-  .window-url a:hover span:first-child {
+}
+
+.window-url a:hover span:first-child {
     display: inline;
-  }
-  
-  .window-url a:hover span:last-child {
+}
+
+.window-url a:hover span:last-child {
     opacity: 0;
-  }
-  
-  .window-dots {
+}
+
+.window-dots {
     display: flex;
     gap: 6px;
-  }
-  
-  .window-dots .dot {
+}
+
+.window-dots .dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     display: inline-block;
-  }
-  
-  .dot.red {
+}
+
+.dot.red {
     background-color: #999;
-  }
-  
-  .dot.yellow {
+}
+
+.dot.yellow {
     background-color: #6B6B6B;
-  }
-  
-  .dot.green {
+}
+
+.dot.green {
     background-color: #c2c2c2;
-  }
-  
+}
 
 
-  .emoji {
+
+.emoji {
     width: 1em;
     height: 1em;
     vertical-align: -0.1em;
     /* 텍스트 기준으로 정렬 보정 */
-  }
-  
-  
+}
+
+
 
 
 
@@ -256,7 +256,10 @@ header {
     opacity: 0.8;
 }
 
-
+.mark {
+    color: #0004FF;
+    font-style: italic;
+}
 
 .naka p {
     line-height: 32px;
@@ -271,6 +274,10 @@ header {
 .nakaimg {
     width: 100%;
     padding: 20px 0px 16px 0px;
+}
+.nakaimg2 {
+    width: 100%;
+    padding: 0px 0px 16px 0px;
 }
 
 .prof {
@@ -483,6 +490,7 @@ header {
     text-align: center;
     color: #262626;
 }
+
 .comment-box button:hover {
     background-color: #0004FF;
     color: #fff;
@@ -645,7 +653,7 @@ footer h3 {
     color: #ffffff;
     margin-bottom: 18px;
     font-size: 40px;
-  }
+}
 
 footer p {
     color: #fff;
@@ -780,41 +788,41 @@ footer h3:hover {
     h1 {
         font-size: 44px;
         letter-spacing: -2px;
-      }
-    
-      h2 {
+    }
+
+    h2 {
         font-size: clamp(32px, 5vw, 44px);
         letter-spacing: -2px;
-      }
-    
-      h3 {
+    }
+
+    h3 {
         font-size: clamp(24px, 4.5vw, 32px);
         letter-spacing: -2px;
-      }
-    
-      h4 {
+    }
+
+    h4 {
         font-size: clamp(18px, 4vw, 24px);
         letter-spacing: -2px;
-      }
-    
-      h5 {
+    }
+
+    h5 {
         font-size: clamp(16px, 3vw, 18px);
-      }
-    
-      p {
+    }
+
+    p {
         font-size: 12px;
         letter-spacing: -1px;
-      }
+    }
 
-      
-  .breaking p {
-    font-size: 18px;
-    margin: 0 1rem;
-  }
 
-    
+    .breaking p {
+        font-size: 18px;
+        margin: 0 1rem;
+    }
 
-      #popup {
+
+
+    #popup {
         display: none;
     }
 
@@ -830,7 +838,7 @@ footer h3:hover {
         padding: 36px 12px 60px 12px;
         height: auto;
     }
-    
+
     .naka h1 {
         padding-bottom: 12px;
         line-height: 44px;
@@ -846,8 +854,8 @@ footer h3:hover {
     }
 
     .prof img {
-     width: 30px;
-     height: 30px;
+        width: 30px;
+        height: 30px;
     }
 
     .prof p {
@@ -933,114 +941,117 @@ footer h3:hover {
     }
 
 
-    
-.bosyuu h2 {
-    color: #FF00BC;
-    line-height: 24px;
-}
 
-.bosyuu h3 {
-    color: #262626;
-    line-height: 24px;
-}
+    .bosyuu h2 {
+        color: #FF00BC;
+        line-height: 24px;
+    }
 
-.bosyuu p {
-    font-size: 16px;
-    padding: 0px;
-}
-.bosyuu a {
-    font-size: 24px;
-}
+    .bosyuu h3 {
+        color: #262626;
+        line-height: 24px;
+    }
 
+    .bosyuu p {
+        font-size: 16px;
+        padding: 0px;
+    }
 
-
-
-#s3 {
-    padding: 32px 16px;
-}
-
-.nicholasdaisuki p {
-    font-size: 16px;
-    padding: 24px 0 12px 0;
-}
+    .bosyuu a {
+        font-size: 24px;
+    }
 
 
-.comment-box {
-    gap: 16px;
-    font-size: 12px;
-
-}
-
-.comment-box input {
-    font-size: 12px;
-    padding: 4px 0 4px 16px;
-}
-
-.tooltip {
-    top: -100%;
-    left: 25%;
-    padding: 4px 4px;
-    font-size: 12px;
-}
 
 
-.tenshiup {
-    padding: 2px 10px;
-    font: 700 12px/18px 'pretendard', sans-serif;
+    #s3 {
+        padding: 32px 16px;
+    }
 
-}
-
-.username {
-    font-size: 12px;
-}
-.date  {
-    font-size: 10px;
-}
-
-.comment {
-    padding: 20px 0;
-}
-
-.comment-body {
-    font-size: 12px;
-    line-height: 18px;
-}
+    .nicholasdaisuki p {
+        font-size: 16px;
+        padding: 24px 0 12px 0;
+    }
 
 
-.avatar {
-    width: 30px;
-    height: 30px;
-}
+    .comment-box {
+        gap: 16px;
+        font-size: 12px;
 
-.comment-header {
-    gap: 8px;
-    margin-bottom: 8px;
-}
+    }
 
-.more {
-    font-size: 18px;
-    padding-bottom: 8px;
-}
+    .comment-box input {
+        font-size: 12px;
+        padding: 4px 0 4px 16px;
+    }
 
-#gnb h3 {
-    font-size: 40px;
-  }
-
-  footer {
-    height: 200px;
-    padding-top: 150px;
-  }
-
-  footer h3 {
-    margin-bottom: 6px;
-    font-size: 24px;
-  }
-
-  footer p {
-    font: 200 10px/0px 'pretendar', sans-serif;
-    letter-spacing: 0px;
-  }
+    .tooltip {
+        top: -100%;
+        left: 25%;
+        padding: 4px 4px;
+        font-size: 12px;
+    }
 
 
-    
+    .tenshiup {
+        padding: 2px 10px;
+        font: 700 12px/18px 'pretendard', sans-serif;
+
+    }
+
+    .username {
+        font-size: 12px;
+    }
+
+    .date {
+        font-size: 10px;
+    }
+
+    .comment {
+        padding: 20px 0;
+    }
+
+    .comment-body {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .comment-header {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .more {
+        font-size: 18px;
+        padding-bottom: 8px;
+    }
+
+    #gnb h3 {
+        font-size: 40px;
+    }
+
+    footer {
+        height: auto;
+        padding: 150px 0 44px 0;
+        background-position: right;
+    }
+
+    footer h3 {
+        margin-bottom: 6px;
+        font-size: 24px;
+    }
+
+    footer p {
+        font: 200 8px/0px 'pretendar', sans-serif;
+        letter-spacing: 0px;
+    }
+
+
+
 }
