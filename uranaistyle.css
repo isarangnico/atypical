@@ -287,7 +287,7 @@ p {
 
 
 
-/* 특수 카드만 이미지 배경 */
+
 .flip-container.special .front {
   background: none;
   padding: 0;
@@ -300,9 +300,11 @@ p {
 }
 
 .back4 .text p {
-  text-shadow:  0 0 10px #ff00bc, 0 0 20px #ff00bc;
+  text-shadow:  0 0 8px #ff00bc, 0 0 8px #ff00bc;
   font-weight: 700;
 }
+
+
 
 .text {
   width: 100%;
@@ -318,7 +320,7 @@ p {
 
 .text p {
   color: #fff;
-  font-weight: 200;
+  font-weight: 400;
   text-shadow: 0 0 8px #121212;
 }
 
@@ -341,12 +343,13 @@ footer h3 {
   color: #ffffff;
   margin-bottom: 18px;
   font-size: 40px;
+  mix-blend-mode: difference;
 }
 
 
 footer p {
   color: #fff;
-  font: 200 16px 'pretendar', sans-serif;
+  font: 200 10px 'pretendar', sans-serif;
   mix-blend-mode: difference;
 }
 
@@ -371,6 +374,11 @@ footer a {
   .flip-container {
     width: 346px;
     height: 346px;
+  }
+
+  footer {
+    padding: 200px 0 60px 0;
+    height: auto;
   }
 
 }
@@ -439,13 +447,13 @@ footer a {
   }
 
   footer {
-    height: 200px;
-    padding-top: 60px;
+    height: auto;
+    padding: 60px 0 60px 0;
   }
 
   footer p {
 
-    font: 200 10px 'pretendar', sans-serif;
+    font: 200 8px 'pretendar', sans-serif;
   }
   
   footer h3 {
