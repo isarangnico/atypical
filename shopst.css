@@ -396,7 +396,12 @@ p {
     width: 100%;
     margin: auto;
     padding: 0 72px 324px 72px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 5.18%, #FFFFFF 25.81%);
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 0) 5.18%, #FFFFFF 25.81%); */
+}
+
+#s3 a {
+    text-decoration: none;
+
 }
 
 .s3_box {
@@ -414,6 +419,7 @@ p {
 .s3_box img {
     width: 100%;
     max-width: 300px;
+    margin: auto;
 }
 
 .s3_box p {
@@ -915,7 +921,7 @@ footer a {
 
 
 
-        .coupon {
+    .coupon {
         padding: 12px;
         max-height: 200px;
     }
@@ -1041,10 +1047,11 @@ footer a {
         display: none;
     }
 
+  footer {
+    height: auto;
+    padding: 150px 0 60px 0;
+  }
 
-    footer {
-        padding-top: 100px;
-    }
 
     footer h5 {
         padding-bottom: 6px;
@@ -1060,7 +1067,7 @@ footer a {
     }
 
     footer p {
-        font: 200 10px/0px 'pretendar', sans-serif;
+        font: 200 8px/0px 'pretendar', sans-serif;
         letter-spacing: 0px;
     }
 
