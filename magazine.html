@@ -7,11 +7,11 @@
     <title>MAGAZINE</title>
     <link rel="stylesheet" href="magazine.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="icon" href="img/favi1.png">
+    <link rel="icon" href="img/favi1.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
-<!-- ScrollTrigger 플러그인 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
 </head>
 
@@ -19,8 +19,8 @@
     <div>
         <div class="window-bar">
             <div class="window-url">
-                <a href="index.html">≪ <span>main</span>
-                    <span>magazine.com</span></a>
+                <a href="index.html">≪ <span>777</span>
+                    <span>magazine</span></a>
             </div>
             <div class="window-dots">
                 <span class="dot red"></span>
@@ -39,13 +39,13 @@
 
                 <div class="menu">
                     <ul>
-                        <li><a href="#">EARTH</a></li>
-                        <li><a href="#">BEAUTY</a></li>
-                        <li><a href="#">FILM&TV</a></li>
-                        <li><a href="#">MOVIE</a></li>
-                        <li><a href="#">MUSIC</a></li>
-                        <li><a href="#">LIFE&CULTURE</a></li>
-                        <li><a href="#">ANGEL</a></li>
+                        <li><a href="404.html">EARTH</a></li>
+                        <li><a href="404.html">BEAUTY</a></li>
+                        <li><a href="404.html">FILM&TV</a></li>
+                        <li><a href="404.html">MOVIE</a></li>
+                        <li><a href="404.html">MUSIC</a></li>
+                        <li><a href="404.html">LIFE&CULTURE</a></li>
+                        <li><a href="404.html">ANGEL</a></li>
                     </ul>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 <img src="img/magazine/s1_9.png" class="img9">
                 <img src="img/magazine/s1_10.png" class="img10">
             </div>
-        
+
         </section>
 
         <section id="s2">
@@ -79,27 +79,27 @@
                         <p>그냥 생각나는 대로 말했을 뿐인데...</p>
                     </div>
                 </a>
-                <a href="#">
+                <a href="magazine02.html">
                     <div class="s2_box1" data-aos="slide-up" data-aos-delay="200">
                         <p>ANGEL</p>
                         <img src="img/magazine/s2_02.png" alt="">
-                        <h6>컴퓨터 학원에서 벌어진 배경화면 테러 
+                        <h6>컴퓨터 학원에서 벌어진 배경화면 테러
                             악마의 소행으로 밝혀져...</h6>
                         <p>천사 혐오 범죄의 역사</p>
                     </div>
                 </a>
-                
-                <a href="#">
+
+                <a href="magazine03.html">
                     <div class="s2_box1" data-aos="slide-up" data-aos-delay="300">
                         <p>FILM&TV</p>
                         <img src="img/magazine/s2_03.png" alt="">
-                        <h6>지상세계 드라마 보느라 밤새우는 천사들,
+                        <h6>OTT 시청에 푹 빠진 천사들,
                             에디터가 알려주는 최신 인기작 정리 </h6>
                         <p>출근, 등교 전날 재생 금지</p>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="404.html">
                     <div class="s2_box1" data-aos="slide-up" data-aos-delay="400">
                         <p>LIFE&CULTURE</p>
                         <img src="img/magazine/s2_04.png" alt="">
@@ -107,8 +107,8 @@
                         <p>이거 하나로 천국 MZ가 되었습니다 </p>
                     </div>
                 </a>
-               
-               
+
+
             </div>
         </section>
 
@@ -138,29 +138,29 @@
         AOS.init();
     </script>
 
-<script>
-// GSAP 등록
-gsap.registerPlugin(ScrollTrigger);
+    <script>
+        // GSAP 등록
+        gsap.registerPlugin(ScrollTrigger);
 
-// 이미지 선택 (NodeList를 배열로 변환해서 뒤집음)
-const images = Array.from(document.querySelectorAll('.s1img img')).reverse();
+        // 이미지 선택 (NodeList를 배열로 변환해서 뒤집음)
+        const images = Array.from(document.querySelectorAll('.s1img img')).reverse();
 
-images.forEach((img, i) => {
-  gsap.from(img, {
-    scrollTrigger: {
-      trigger: "#s1",
-      start: "top center+=100",
-      toggleActions: "play none none none"
-    },
-    opacity: 0,
-    y: 80,
-    scale: 0.5,
-    duration: 0.8,
-    ease: "back.out(1.7)",
-    delay: i * 0.15
-  });
-});
-  </script>
+        images.forEach((img, i) => {
+            gsap.from(img, {
+                scrollTrigger: {
+                    trigger: "#s1",
+                    start: "top center+=100",
+                    toggleActions: "play none none none"
+                },
+                opacity: 0,
+                y: 80,
+                scale: 0.5,
+                duration: 0.8,
+                ease: "back.out(1.7)",
+                delay: i * 0.15
+            });
+        });
+    </script>
 
 </body>
 
