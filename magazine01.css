@@ -243,7 +243,7 @@ p {
     background-repeat: no-repeat;
     left: 72px;
     /* z-index: 999; */
-    top: 2400px;
+    top: 150%;
     position: absolute;
     transition: top 0.3s ease;
     text-align: center;
@@ -289,7 +289,7 @@ p {
     background-repeat: no-repeat;
     right: 72px;
     /* z-index: 999; */
-    top: 1300px;
+    top: 1200px;
     position: absolute;
     transition: top 0.3s ease;
     text-align: center;
@@ -568,7 +568,7 @@ footer a {
 
     h4 {
         font: 700 16px 'pretendard', sans-serif;
-        letter-spacing: -2px;
+        letter-spacing: -1px;
         color: #262626;
     }
 
