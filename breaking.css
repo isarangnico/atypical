@@ -140,7 +140,7 @@ header {
     background-image: url(img/news/news_header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
 }
 
 #gnb {
@@ -153,11 +153,11 @@ header {
 }
 
 #gnb h3 {
-    color: #0004FF;
+    color: #fff;
     font-size: 44px;
     text-align: center;
     /* font-style: italic; */
-    /* mix-blend-mode: difference; */
+    mix-blend-mode: difference;
 }
 
 #gnb a {
